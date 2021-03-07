@@ -1,0 +1,29 @@
+@import 'variables/colors';
+@import 'variables/layout';
+
+.search-form {
+    width: 100%;
+    .form-field {
+        width: 100%;
+        .search-icon {
+            color: $color-light-blue;
+            position: absolute;
+            margin-left: -$distance-25;
+        }
+
+        .auto-input ::before {
+            font-family: 'Material Icons';
+            content: '\E8B6';
+            line-height: 1;
+            padding: 8px 0px 0px 8px;
+            font-weight: normal;
+            font-size: 24px;
+        }
+    }
+}
+
+.option {
+    height: 5em;
+    padding: 1em;
+    text-align: left;
+}

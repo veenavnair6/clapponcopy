@@ -1,0 +1,23 @@
+@import 'variables/layout';
+@import 'variables/colors';
+
+:host {
+    height: $header-height;
+    border: 1px solid $color-header-border;
+    background: $color-header-background;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 0 2px $color-header-shadow;
+}
+
+header {
+    position: absolute;
+    margin: $distance-12 0 0 $distance-10;
+
+    a {
+        display: inline-block;
+        padding-left: $distance-15;
+        color: $color-white;
+        opacity: 0.85;
+    }
+}

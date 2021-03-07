@@ -1,0 +1,23 @@
+@import 'variables/colors';
+
+$img-icon-width: 200px;
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    justify-content: center;
+    top: 30%;
+    position: relative;
+    .icon-container {
+        img {
+            width: $img-icon-width;
+            left: 50%;
+            position: relative;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .search {
+        height: 4em;
+        width: 50em;
+    }
+}

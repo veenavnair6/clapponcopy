@@ -1,0 +1,15 @@
+@import 'variables/colors';
+@import 'variables/layout';
+
+.item {
+    .search-img {
+        width: $distance-32;
+        height: $distance-32;
+        vertical-align: middle;
+        margin-right: $distance-8;
+    }
+    [dir='rtl'] .search-img {
+        margin-right: 0;
+        margin-left: 8px;
+    }
+}

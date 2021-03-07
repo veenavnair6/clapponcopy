@@ -1,0 +1,6 @@
+@import 'variables/layout';
+@import 'variables/colors';
+
+.repair-wrapper {
+    height: calc(100% - #{$header-height});
+}

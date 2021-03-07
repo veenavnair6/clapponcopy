@@ -1,0 +1,15 @@
+<form class="search-form">
+    <mat-form-field class="form-field">
+        <mat-icon class="search-icon" aria-hidden="false">search</mat-icon>
+        <mat-label>Type here to search...</mat-label>
+        <input class="auto-input" matInput [matAutocomplete]="searchautocomplete" [formControl]="searchCtrl">
+
+        <mat-autocomplete #searchautocomplete>
+            <mat-option (click)="navigateToRepair($event)" class="option"
+                *ngFor="let option of options$ | async" [value]="option.deviceName">
+                <app-search-result-item [option]="option">
+                </app-search-result-item>
+            </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+</form>
